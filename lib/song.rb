@@ -37,9 +37,7 @@ class Song
     split_array.each do |value|
       split_array_no_whitespace << value.split(" ")
     end
-
-    binding.pry
-    @name = split_array_no_whitespace.join(" ")[1]
+    @name = split_array_no_whitespace[1].join(" ")
     self.new(@name)
   end
 
