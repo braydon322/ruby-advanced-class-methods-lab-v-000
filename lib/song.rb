@@ -31,6 +31,9 @@ class Song
     @@all.sort
   end
 
+  def self.create_from_filename
+    self.new(name)
+
   def self.destroy_all
     @@all.clear
   end
