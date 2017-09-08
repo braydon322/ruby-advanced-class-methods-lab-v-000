@@ -60,7 +60,10 @@ class Song
     @artist_name = split_array_no_whitespace[0].join(" ")
 
     song = self.new
+    song.name = @name
+    song.artist_name = @artist_name
     @@all << self
+    song
   end
 
   def self.create_from_filename(file_name)
