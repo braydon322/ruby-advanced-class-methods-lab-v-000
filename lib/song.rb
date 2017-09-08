@@ -44,15 +44,7 @@ class Song
   end
 
   def self.create_from_filename(file_name)
-    split_array_no_whitespace = []
-    split_array = file_name.split(/[-\.]/)
-    split_array.each do |value|
-      split_array_no_whitespace << value.split(" ")
-    end
-
-    @name = split_array_no_whitespace[1].join(" ")
-    @artist_name = split_array_no_whitespace[0].join(" ")
-    self.new(@name)
+    new_from_filename(fil_name)
   end
 
   def self.destroy_all
