@@ -8,10 +8,7 @@ class Song
 
   def initialize(name)
     @name = name
-  end
-
-  def self.create(name)
-      name = self.new
+    @@all << self
   end
 
   def save
