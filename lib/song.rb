@@ -31,7 +31,12 @@ class Song
     @@all.sort
   end
 
-  def self.create_from_filename
+  def self.new_from_filename(fileName)
+    fileName.split(/[-\.]/)
+    self.new(name)
+  end
+
+  def self.create_from_filename(fileName)
     self.new(name)
   end
 
