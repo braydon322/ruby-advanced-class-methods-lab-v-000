@@ -33,6 +33,7 @@ class Song
 
   def self.new_from_filename(file_name)
     split_array = file_name.split(/[-\. ]/)
+    binding.pry
     @name = split_array[1]
     self.new(@name)
   end
