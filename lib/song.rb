@@ -20,11 +20,12 @@ class Song
   end
 
   def self.find_by_name(name)
-    if @@all.include?(name)
-      name
-    else
-      puts "Name is not found in array."
-    end
+    @@all.detect{ |song| song.name == name}
+    #if @@all.include?(name)
+    #  name
+    #else
+    #  puts "Name is not found in array."
+    #end
   end
 
   def self.find_or_create_by_name(name)
