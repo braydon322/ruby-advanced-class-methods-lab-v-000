@@ -27,6 +27,9 @@ class Song
     self.new(name)
   end
 
+  def self.alphabetical
+    @@all.sort
+
   def self.destroy_all
     @@all.clear
   end
