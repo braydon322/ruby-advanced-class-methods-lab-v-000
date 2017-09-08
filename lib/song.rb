@@ -40,7 +40,8 @@ class Song
 
     @name = split_array_no_whitespace[1].join(" ")
     @artist_name = split_array_no_whitespace[0].join(" ")
-    self.new(@name)
+    save
+
   end
 
   def self.create_from_filename(file_name)
