@@ -6,6 +6,15 @@ class Song
     @@all
   end
 
+  def initialize(name)
+    @name = name
+  end
+
+  def self.create
+      @@all << self.name
+      return self.name
+  end
+
   def save
     self.class.all << self
   end
