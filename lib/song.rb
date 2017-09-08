@@ -27,7 +27,7 @@ class Song
     end
   end
 
-  def find_or_create_by_name(name)
+  def self.find_or_create_by_name(name)
     if @@all.include?(name)
       self.find_by_name(name)
     else
