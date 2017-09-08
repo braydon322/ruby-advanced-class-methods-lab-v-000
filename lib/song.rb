@@ -33,6 +33,8 @@ class Song
 
   def self.new_from_filename(file_name)
     split_array = file_name.split(/[-\.]/)
+    split_array.each do |value|
+      split_array_no_whitespace = value.split(" ")
     binding.pry
     @name = split_array[1]
     self.new(@name)
