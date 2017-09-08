@@ -33,6 +33,7 @@ class Song
 
   def self.create_from_filename
     self.new(name)
+  end
 
   def self.destroy_all
     @@all.clear
