@@ -37,8 +37,11 @@ class Song
     split_array.each do |value|
       split_array_no_whitespace << value.split(" ")
     end
+
     @name = split_array_no_whitespace[1].join(" ")
+    @artist_name = split_array_no_whitespace[1].join(" ")
     self.new(@name)
+
   end
 
   def self.create_from_filename(file_name)
