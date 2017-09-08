@@ -24,6 +24,7 @@ class Song
       name
     else
       puts "Name is not found in array."
+    end
   end
 
   def find_or_create_by_name(name)
