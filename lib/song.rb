@@ -58,6 +58,8 @@ class Song
 
     @name = split_array_no_whitespace[1].join(" ")
     @artist_name = split_array_no_whitespace[0].join(" ")
+
+    song = self.new
     @@all << self
   end
 
